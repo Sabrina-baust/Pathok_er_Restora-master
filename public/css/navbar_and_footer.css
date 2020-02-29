@@ -1,0 +1,67 @@
+/*------------------Navbar------------------*/
+a{
+  color: #cd6133;
+}
+a:hover{
+  color: brown;
+}
+.container-fluid{
+  padding: 0 5%;
+}
+.colored-section {
+  background-color: wheat;
+  color: white;
+}
+
+.white-section{
+  background-color: white;
+
+}
+.navbar {
+  padding: 0 2rem 3rem;
+  color: #cd6133;
+}
+.navbar-brand {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+}
+.navbar-nav > li > .dropdown-menu {
+  background-color: wheat;
+}
+.dropdown-item{
+  color: #cd6133;
+}
+
+.cust-btn{
+  color: #cd6133;
+  border-color: #cd6133;
+}
+
+.cust-btn:hover{
+  background-color: #cd6133;
+  color: white;
+}
+
+/*---------------------Footer--------------------*/
+
+#footer{
+  text-align: center;
+  padding: 2% 0;
+}
+.footer-icons{
+  color: wheat;
+  margin: 1%;
+}
+.footer-icons:hover{
+  color: #cd6133;
+}
+.footer-text{
+  color: #8f8f8f;
+  font-family: Ubuntu;
+}

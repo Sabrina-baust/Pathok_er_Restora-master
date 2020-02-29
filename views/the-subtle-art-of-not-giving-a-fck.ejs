@@ -1,0 +1,64 @@
+<%- include("partials/header"); %>
+<div class="container">
+    <div class="row mb-2 p-4 p-md-5 shadow p-3 mb-5 bg-white rounded">
+        <div class="col-md-5">
+            <img src="images/the_subtle_art_of_not_giving_a_fck.jpg" alt="eat_that_frog" height="250" width="200">
+        </div>
+        <div class="col-md-5">
+            <h1 class="mb-0">The Subtle Art of Not Giving A F*ck</h1>
+            <h4 class="text-muted">Mark Manson</h4>
+            <div class="text-muted m-t-140">Category: Non-Fiction</div>
+        </div>
+
+        <%- include("partials/sidebar"); %>
+    </div>
+
+    <div class="row mb-2 p-4 p-md-5 shadow p-3 mb-5 bg-white rounded">
+        <div class="col-sm-2">
+            <img  class="rounded-circle m-r-10" src="images/mark_manson.jpg" alt="mark manson" height="200" width="150">
+        </div>
+        <div class="col-md-8">
+            <h4 class="text-muted">Mark Manson</h4>
+            <p>Mark Manson is a self-help author, personal development consultant, entrepreneur, and blogger.[1][2] He blogs under his own name at an eponymous website, and as of 2019 had authored three books, the First book being Models: Attract Women Through Honesty, The 2nd book is The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life which rose to number six on The New York Times bestseller list. His latest book is called Everything Is F*cked: a Book About Hope.</p>
+        </div>
+    </div>
+
+    <div class="pt-5 mt-5 ">
+        <h3 class="mb-5">Reviews</h3>
+        <ul class="list-unstyled comment-list shadow p-3 mb-5 bg-white rounded">
+            <li class="comment">
+                <div class="comment-body">
+                    <% reviews.forEach(function(review){ %>
+                        <h3><%= review.name %></h3>
+                        <p><%= review.review %></p>
+                    <% }) %>
+
+                </div>
+            </li>
+        </ul>
+        <!-- END comment-list -->
+
+        <div class="comment-form-wrap pt-5">
+            <h3 class="mb-5">Post Review</h3>
+            <form action="/the-subtle-art-of-not-giving-a-fck" method="post" class="p-3 p-md-5 shadow p-3 mb-5 bg-white rounded">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input name="user_name" type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input name="user_email" type="email" class="form-control" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Review</label>
+                    <textarea name="user_review" id="message" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg cust-btn"> Submit </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer"); %>

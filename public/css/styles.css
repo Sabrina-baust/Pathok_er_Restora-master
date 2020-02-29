@@ -1,0 +1,108 @@
+body{
+  text-align: center;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+.container-fluid{
+  padding: 0 10%;
+}
+
+.colored-section {
+  background-color: wheat;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*Title*/
+.big-heading {
+  color: #cd6133;
+  padding: 4rem;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.cust-btn{
+  color: #cd6133;
+  border-color: #cd6133;
+}
+
+.cust-btn:hover{
+  background-color: #cd6133;
+  color: white;
+}
+
+/*----------Modified for the search box-----------------*/
+.form-control::-webkit-input-placeholder {
+  color: #cd6133;
+}
+.form-control:focus {
+  border-color: #cd6133;
+  box-shadow: 0 0 0 0.2rem rgba(255, 121, 63, 1);
+}
+/*-----------------------------------------------------*/
+.btn-margin {
+  margin: 5% 3% 5% 0;
+}
+
+.down-btn:hover{
+  color: white;
+  background-color: #cd6133;
+}
+
+.title-img {
+  position: absolute;
+  right: 0%;
+  transform: rotate(15deg);
+  width: 100%;
+}
+/*-------------------Feature*-------------------/*/
+
+#features {
+  position: relative;
+}
+
+.feature-box {
+  padding: 8%;
+}
+
+.feature-icon {
+  color: #cd6133;
+  margin-bottom: 1rem;
+}
+
+.featute-title {
+  font-size: 1.5rem;
+  color: #cd6133;
+}
+
+.feature-text{
+  color: #8f8f8f;
+  font-family: Ubuntu;
+}
+
+/*--------------------Quote--------------------*/
+.quote-img {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+.quote-text {
+  color: #cd6133;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+img+em{
+  color: #cd6133;
+}
+
+.p-t-5{
+  padding-top: 5rem;
+}

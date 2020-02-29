@@ -1,0 +1,64 @@
+<%- include("partials/header"); %>
+<div class="container">
+    <div class="row mb-2 p-4 p-md-5 shadow p-3 mb-5 bg-white rounded">
+        <div class="col-md-5">
+            <img src="images/eat_that_frog.jpg" alt="eat_that_frog" height="250" width="200">
+        </div>
+        <div class="col-md-5">
+            <h1 class="mb-0">Eat That Frog</h1>
+            <h4 class="text-muted">Brian Tracy</h4>
+            <div class="text-muted m-t-140">Category: Non-Fiction</div>
+        </div>
+
+        <%- include("partials/sidebar"); %>
+    </div>
+
+    <div class="row mb-2 p-4 p-md-5 shadow p-3 mb-5 bg-white rounded">
+        <div class="col-sm-2">
+            <img  class="rounded-circle m-r-10" src="images/brian_tracy.jpg" alt="brian tracy" height="200" width="150">
+        </div>
+        <div class="col-md-8">
+            <h4 class="text-muted">Brian Tracy</h4>
+            <p>Brian Tracy (born January 5, 1944) is a Canadian-American motivational public speaker and self-development author. He is the author of over seventy books that have been translated into dozens of languages. His popular books are Earn What You're Really Worth, Eat That Frog!, and The Psychology of Achievement.</p>
+        </div>
+    </div>
+
+    <div class="pt-5 mt-5 ">
+        <h3 class="mb-5">Reviews</h3>
+        <ul class="list-unstyled comment-list shadow p-3 mb-5 bg-white rounded">
+            <li class="comment">
+                <div class="comment-body">
+                    <% reviews.forEach(function(review){ %>
+                        <h3><%= review.name %></h3>
+                        <p><%= review.review %></p>
+                    <% }) %>
+
+                </div>
+            </li>
+        </ul>
+        <!-- END comment-list -->
+
+        <div class="comment-form-wrap pt-5">
+            <h3 class="mb-5">Post Review</h3>
+            <form action="/eat-that-frog" method="post" class="p-3 p-md-5 shadow p-3 mb-5 bg-white rounded">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input name="user_name" type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input name="user_email" type="email" class="form-control" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Review</label>
+                    <textarea name="user_review" id="message" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg cust-btn"> Submit </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer"); %>

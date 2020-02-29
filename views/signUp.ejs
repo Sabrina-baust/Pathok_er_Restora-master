@@ -1,0 +1,23 @@
+<%- include("partials/header"); %>
+
+<form action="/signup" method="post" class="form-signin">
+  <img class="signIn-img" src="images/book.png" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please Sign Up</h1>
+  <label for="inputUserName" class="sr-only">Full Name</label>
+  <input name="user_name" type="text" id="inputUserName" class="form-control" placeholder="User Name" required autofocus>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input name="user_email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input name="user_password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <label for="inputConfPassword" class="sr-only">Confirm Password</label>
+  <input name="user_conf_password" type="password" id="inputConfPassword" class="form-control" placeholder="Confirm Password" required>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-block btn-outline-dark cust-btn" type="submit">Sign Up</button>
+</form>
+
+<%- include("partials/footer"); %>
